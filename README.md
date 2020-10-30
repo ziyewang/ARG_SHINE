@@ -18,4 +18,4 @@ Then simply create a ARGshine environment
 cd ARG-SHINE
 conda env create -f environment.yml
 source activate ARGshine
-``
+```
