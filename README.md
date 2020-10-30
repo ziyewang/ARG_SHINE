@@ -1,6 +1,6 @@
 # ARG-SHINE: improve antibiotic resistance class prediction by integrating Sequence Homology, functIoNal information, and deep convolutional nEural network
 
-## <a name="started"></a>Getting Started
+## <a name="started"></a>Installation
 
 ### <a name="docker"></a>Conda
 
