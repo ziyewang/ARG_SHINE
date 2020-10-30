@@ -4,7 +4,7 @@
 
 ### <a name="docker"></a>Conda
 
-We recommend using conda to run ARG-SHINE. Download [here](https://www.continuum.io/downloads)
+We recommend using conda to run ARG-SHINE.
 
 ### <a name="docker"></a>Obtain ARG-SHINE and create an environment
 After installing Anaconda (or miniconda), fisrt obtain ARG-SHINE:
