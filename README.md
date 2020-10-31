@@ -1,6 +1,6 @@
 # ARG-SHINE: improve antibiotic resistance class prediction by integrating Sequence Homology, functIoNal information, and deep convolutional nEural network
 
-## <a name="started"></a>Getting Started
+## <a name="started"></a>Installation
 
 ### <a name="docker"></a>Conda
 
@@ -19,3 +19,8 @@ cd ARG-SHINE
 conda env create -f environment.yml
 source activate ARGshine
 ```
+You can run ARG_SHINE against a fasta file (protein sequences) with the following commmand
+```sh
+python ARG_SHINE_predict.py test.fasta
+```
+
