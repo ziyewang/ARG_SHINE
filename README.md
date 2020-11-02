@@ -16,7 +16,7 @@ Then simply create a ARGshine environment
 
 ```sh
 cd ARG-SHINE
-conda env create -f environment.yml
+conda env create -f argshine.yaml
 source activate ARGshine
 ```
 You can run ARG_SHINE against a fasta file (protein sequences) with the following commmand
