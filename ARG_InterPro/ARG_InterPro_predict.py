@@ -1,16 +1,9 @@
-#interpro lr wow
-#'/home/wangzy/code/ARG_identification/result/interpro/interpro_coala70.txt' 这个文件包含所有序列的结果这样才不会乱，id才是对的
-#之后别的数据如果要用的话得特殊处理一下？？可能是有点问题 8017-9902 虽然这部分特征没有训练，也不好扩展
-
-#from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model.logistic import LogisticRegression
 from collections import defaultdict
 from Bio import SeqIO
-import pandas as pd
 from scipy.sparse import csr_matrix
 import numpy as np
 
-from sklearn import metrics
 import pickle
 import argparse
 
@@ -95,9 +88,6 @@ num= 8240
 def arginterpro_predict(query_fasta,output_path):
     #feature_file = '/home/wangzy/data/ARG_project/arg_project_result/coala90/validation_on_novel_genes/ismej_332_novel_genes/ismej_332_novel_genes_interpro_coala90_correct.txt'
     feature_file ='scripts/query_interpro_feature.txt'
-    # fasta_file='/home/wangzy/code/ARG_identification/ARG_deepclassifier/coala_all_datasets/coala_process/coala70_for_component_train.fasta'
-
-    # f_for_component_train='/home/wangzy/code/ARG_identification/ARG_deepclassifier/coala_all_datasets/coala_process/'+dataset+'_for_component_train.fasta'
 
     pid_feature = get_binary_feature(feature_file)
 
@@ -118,7 +108,7 @@ def arginterpro_predict(query_fasta,output_path):
 
     classifier = pickle.load(open(file_handle, 'rb'))
 
-    # 存预测概率
+    # save proba
     predict_proba = classifier.predict_proba(query_x_binary)
 
     outfile = output_path+'/ARG_interpro_predicted_proba.npy'
@@ -139,7 +129,6 @@ def arginterpro_predict(query_fasta,output_path):
 if __name__ == '__main__':
     args = arguments()
     query_fasta = args.fasta_file #sys.argv[1]
-    #f_for_component_train_path = sys.argv[2]#'training_database'
     f_for_component_train='training_database/coala90_top_16classes_for_component_train.fasta'
     output_path = args.output_path#sys.argv[2]
 
