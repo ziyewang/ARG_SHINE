@@ -264,7 +264,6 @@ def argcnn_predict(query_fasta,output_path,f_for_component_train):
 if __name__ == '__main__':
     args = arguments()
     query_fasta = args.fasta_file #sys.argv[1]
-    #f_for_component_train_path = sys.argv[2]#'training_database'
     f_for_component_train='training_database/coala90_top_16classes_for_component_train.fasta'
     output_path = args.output_path#sys.argv[2]
 
