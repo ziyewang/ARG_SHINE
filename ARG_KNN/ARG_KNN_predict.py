@@ -242,6 +242,6 @@ if __name__ == '__main__':
 
     fname=output_path+'/query_blast_protein_matches_fmt6.txt'
 
-    print ("Starting ARG-CNN prediction!")
+    print ("Starting ARG-KNN prediction!")
     argknn_predict(query_fasta,output_path,fname)
-    print ("ARG-CNN prediction Finished!")
+    print ("ARG-KNN prediction Finished!")
