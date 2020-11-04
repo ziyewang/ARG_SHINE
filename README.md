@@ -12,12 +12,12 @@ After installing Anaconda (or miniconda), fisrt obtain ARG-SHINE:
 ```sh
 git clone https://github.com/ziyewang/ARG_SHINE
 ```
-Then simply create a ARGshine environment 
+Then simply create an argshine_env environment 
 
 ```sh
 cd ARG-SHINE
 conda env create -f argshine.yaml
-source activate ARGshine
+source activate argshine_env
 ```
 You can run ARG_SHINE against a fasta file (protein sequences) with the following commmand
 ```sh
