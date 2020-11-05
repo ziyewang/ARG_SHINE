@@ -63,7 +63,7 @@ def get_candidates(n, class_num):
 
 def get_samples_add_iden(candidates, scores, identity_score,targets=None):
     f, y = [], []
-    for i, c in tqdm(candidates):
+    for i, c in tqdm(candidates, leave=False):
         temp= [s_[i, c] for s_ in scores]
         temp.append(identity_score[i])
         f.append(temp)
