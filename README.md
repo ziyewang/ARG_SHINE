@@ -1,5 +1,6 @@
 # ARG-SHINE: improve antibiotic resistance class prediction by integrating Sequence Homology, functIoNal information, and deep convolutional nEural network
 
+## <a name="requirement"></a>Requirements
 ## <a name="started"></a>Installation
 
 ### <a name="docker"></a>Conda
@@ -21,6 +22,13 @@ source activate argshine_env
 ```
 You can run ARG_SHINE against a fasta file (protein sequences) with the following commmand
 ```sh
-python ARG_SHINE_predict.py test.fasta
+bash argshine_prediction.sh fasta_file output_path PATH_to_interproscan
 ```
 
+## <a name="preprocessing"></a>Contacts and bug reports
+Please send bug reports or questions to Ziye Wang: zwang17@fudan.edu.cn 
+
+## <a name="preprocessing"></a>References
+[1] Arango-Argoty, G., Garner, E., Pruden, A., Heath, L.S., Vikesland, P., Zhang, L.: Deeparg: a deep learning
+approach for predicting antibiotic resistance genes from metagenomic data. Microbiome 6(1), 1–15 (2018)
+[2] Hamid, M.N., Friedberg, I.: Transfer learning improves antibiotic resistance class prediction. BioRxiv (2020)
