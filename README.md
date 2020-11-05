@@ -15,13 +15,12 @@ We recommend using conda to run ARG-SHINE.
 After installing Anaconda (or miniconda), fisrt obtain ARG-SHINE:
 
 ```sh
-git clone https://github.com/ziyewang/ARG_SHINE
+git lfs clone https://github.com/ziyewang/ARG_SHINE
 ```
 Then simply create an argshine_env environment 
 
 ```sh
 cd ARG-SHINE
-git lfs pull
 conda env create -f argshine_env.yaml
 source activate argshine_env
 ```
