@@ -3,7 +3,7 @@
 ## <a name="requirement"></a>Requirements
 ### <a name="InterProScan"></a>InterProScan
 Users need to install InterProScan before using ARG-SHINE. The documents for the InterProScan installation are available at https://github.com/ebi-pf-team/interproscan/wiki/HowToDownload.
-### <a name="Git LFS"></a>[Git LFS] (https://git-lfs.github.com/)
+### <a name="Git LFS"></a>[Git LFS](https://git-lfs.github.com/)
 
 ## <a name="started"></a>Installation
 
