@@ -34,4 +34,5 @@ Please send bug reports or questions to Ziye Wang: zwang17@fudan.edu.cn
 ## <a name="preprocessing"></a>References
 [1] Arango-Argoty, G., Garner, E., Pruden, A., Heath, L.S., Vikesland, P., Zhang, L.: Deeparg: a deep learning
 approach for predicting antibiotic resistance genes from metagenomic data. Microbiome 6(1), 1–15 (2018)
+
 [2] Hamid, M.N., Friedberg, I.: Transfer learning improves antibiotic resistance class prediction. BioRxiv (2020)
