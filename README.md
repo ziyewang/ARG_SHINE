@@ -3,6 +3,7 @@
 ## <a name="requirement"></a>Requirements
 ### <a name="InterProScan"></a>InterProScan
 Users need to install InterProScan before using ARG-SHINE. The documents for the InterProScan installation are available at https://github.com/ebi-pf-team/interproscan/wiki/HowToDownload.
+### <a name="Git LFS"></a>Git LFS
 
 ## <a name="started"></a>Installation
 
@@ -20,6 +21,7 @@ Then simply create an argshine_env environment
 
 ```sh
 cd ARG-SHINE
+git lfs pull
 conda env create -f argshine_env.yaml
 source activate argshine_env
 ```
