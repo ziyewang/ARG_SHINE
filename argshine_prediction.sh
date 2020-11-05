@@ -1,8 +1,8 @@
-#eg: ./run.sh <data_path>/input/strmgCAMI2_short_read_pooled_megahit_assembly.fasta 1000 4
-# bash argshine_prediction.sh fasta_file output_path
+#bash argshine_prediction.sh fasta_file output_path PATH_to_interpro
 
 fasta_file=$1
 output_path=$2
+PATH_to_interpro=$3
 
 #run ARG-CNN
 python ARG_CNN/ARG_CNN_predict.py --fasta_file ${fasta_file} --output_path ${output_path}
@@ -16,8 +16,8 @@ blastp -db training_database/coala90_top_16classes_for_component_train \
 python ARG_KNN/ARG_KNN_predict.py --fasta_file ${fasta_file} --output_path ${output_path}
 
 #run ARG-InterPro
-
-#./interproscan.sh -i /home/wangzy/data/ARG_project/arg_project_result/coala90/validation_on_novel_genes/ismej_332_novel_genes/ismej_332_novel_protein_sequences.fasta -f json --outfile /home/wangzy/data/ARG_project/arg_project_result/coala90/validation_on_novel_genes/ismej_332_novel_genes/query_sequences.fasta.json
+#generate interproscan output
+bash ${PATH_to_interpro}/interproscan.sh -i ${fasta_file} -f json --outfile scripts/query_sequences.fasta.json
 
 python scripts/binary_parser.py scripts/interpro.cfg
 
@@ -25,7 +25,8 @@ python ARG_InterPro/ARG_InterPro_predict.py --fasta_file ${fasta_file} --output_
 
 #gen blast identity score
 python gen_identity_score.py --fasta_file ${fasta_file} --output_path ${output_path}
-#ARG-SHINE
+
+#run ARG-SHINE
 python ARG_SHINE_predict.py --fasta_file ${fasta_file} --output_path ${output_path}
 
 
