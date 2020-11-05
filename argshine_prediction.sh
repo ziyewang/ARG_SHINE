@@ -1,4 +1,4 @@
-#bash argshine_prediction.sh fasta_file output_path PATH_to_interpro
+#bash argshine_prediction.sh fasta_file output_path PATH_to_interproscan
 
 fasta_file=$1
 output_path=$2
