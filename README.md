@@ -26,6 +26,7 @@ source activate argshine_env
 You can run ARG_SHINE against a fasta file (protein sequences) with the following commmand
 ```sh
 bash argshine_prediction.sh fasta_file output_path PATH_to_interproscan
+example: bash argshine_prediction.sh test_data/test.fasta test_data $HOME/interproscan-5.44-79.0
 ```
 
 ## <a name="preprocessing"></a>Contacts and bug reports
