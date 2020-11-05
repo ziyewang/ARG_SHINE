@@ -1,6 +1,8 @@
 # ARG-SHINE: improve antibiotic resistance class prediction by integrating Sequence Homology, functIoNal information, and deep convolutional nEural network
 
 ## <a name="requirement"></a>Requirements
+Users need to install InterProScan before using ARG-SHINE. The documents for the InterProScan installation is available at https://github.com/ebi-pf-team/interproscan/wiki/HowToDownload.
+
 ## <a name="started"></a>Installation
 
 ### <a name="docker"></a>Conda
