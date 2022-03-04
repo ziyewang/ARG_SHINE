@@ -77,7 +77,7 @@ pool_kernel_size=0
 stride=1
 weight_decay=0.0
 dropout_value=0.5
-channel_size=2048
+channel_size=1024 
 
 drop_con1=0.5
 drop_con2=0.5
@@ -136,6 +136,8 @@ class embedding_CNN_attention(nn.Module):
         self.conv1 = nn.Conv1d(embedding_dim, channel_size, kernel_size=kernel_size, stride=stride)
         self.conv2 = nn.Conv1d(channel_size, channel_size, kernel_size=kernel_size, stride=stride)
         self.conv3 = nn.Conv1d(channel_size, channel_size, kernel_size=kernel_size, stride=stride)
+        self.conv4 = nn.Conv1d(channel_size, channel_size, kernel_size=kernel_size, stride=stride)
+
 
         self.MAX_SEQUENCE_LENGTH = MAX_SEQUENCE_LENGTH
         self.pool_kernel_size = pool_kernel_size
